@@ -13,14 +13,17 @@ function App() {
       <Message counter = {count} />
       <br/>
       <button onClick = { ()  => setCount(++count)
+      } >
+      Update Counter</button>
+
       <button onClick = { () => setCount(--count)
       } >
-        Reverse Counter </button>
-       } > 
-      Update Counter</button>
+        Reverse Counter 
+      </button>
 
       <button onClick = {() => setMorning (!isMorning)} > 
       Update Day </button>
+
     </div>
   );
 }
