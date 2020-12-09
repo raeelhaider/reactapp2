@@ -15,15 +15,13 @@ function App() {
       <button onClick = { ()  => setCount(++count)
       } >
       Update Counter</button>
-
-      <button onClick = { () => setCount(--count)
-      } >
+       
+       
+      <button onClick = { () => setCount (count>0 ? --count : 0)
+      } > 
         Reverse Counter 
       </button>
-
-      
-
-      <button onClick = {() => setMorning (!isMorning)} > 
+    <button onClick = {() => setMorning (!isMorning)} > 
       Update Day </button>
 
     </div>
