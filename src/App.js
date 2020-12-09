@@ -7,7 +7,7 @@ function App() {
   let [count, setCount] = useState(0);
   let [isMorning, setMorning] = useState(true);
    return (
-    <div className = {`box ${isMorning ? 'Daylight' : 'Night' }`}>
+    <span className = {`box ${isMorning ? 'Daylight' : 'Night' }`}>
       <h1> Good {isMorning ? 'Morning' : 'Night'} </h1>
       <Message counter = {count} />
       <br/>
@@ -17,7 +17,7 @@ function App() {
 
       <button onClick = {() => setMorning (!isMorning)} > 
       Update Day </button>
-    </div>
+    </span>
   );
 }
 
