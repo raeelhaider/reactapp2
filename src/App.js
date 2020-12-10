@@ -10,6 +10,7 @@ function App() {
    return (
     <div className = {`box ${isMorning ? 'Daylight' : 'Night' }`}>
       <h1> Good {isMorning ? 'Morning' : 'Night'} </h1>
+       <h2> You are welcome in GulAhmed</h2> 
       <Message counter = {count} />
       <br/>
       <button onClick = { ()  => setCount(++count)
